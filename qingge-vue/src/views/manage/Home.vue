@@ -5,9 +5,12 @@
 </template>
 
 <script>
-import echarts from 'echarts'
+import {ai_classification} from "@/utils/openai.js"
 export default {
-  name: "Home.vue"
+  name: "Home.vue",
+  mounted() {
+    // console.log(ai_classification("芬达"));
+  },
 }
 </script>
 
